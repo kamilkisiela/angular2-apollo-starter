@@ -3,10 +3,7 @@ import 'reflect-metadata';
 import 'zone.js/dist/zone';
 import 'rxjs';
 
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
 
-import { AppComponent } from './app/app.component';
-
-import client from './client';
-
-bootstrap(AppComponent);
+platformBrowserDynamic().bootstrapModule(AppModule);
